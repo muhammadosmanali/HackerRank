@@ -20,14 +20,14 @@ def find_nearest_dirty_pos(board, posx, posy, dimx, dimy):
 
 def next_move(posx, posy, dirty_pos):
     bot_pos = [posx, posy]
-    if bot_pos[1] < dirty_pos[1]:
-        print("RIGHT")
-    elif bot_pos[1] > dirty_pos[1]:
-        print("LEFT")
-    elif bot_pos[0] < dirty_pos[0]:
+    if bot_pos[0] < dirty_pos[0]:
         print("DOWN")
     elif bot_pos[0] > dirty_pos[0]:
         print("UP")
+    elif bot_pos[1] < dirty_pos[1]:
+        print("RIGHT")
+    elif bot_pos[1] > dirty_pos[1]:
+        print("LEFT") 
     else:
         print("CLEAN")
 
